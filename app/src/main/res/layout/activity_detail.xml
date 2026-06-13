@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:background="#F5F7FB">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="🛠️ Record Management"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            android:textColor="#0F172A"
+            android:layout_marginBottom="16dp"/>
+
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Month:" android:textStyle="bold"/>
+        <EditText android:id="@+id/etDetailMonth" android:layout_width="match_parent" android:layout_height="48dp" android:background="#FFFFFF" android:padding="12dp" android:layout_marginBottom="12dp" android:focusable="false" />
+
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Units Used (kWh):" android:textStyle="bold"/>
+        <EditText android:id="@+id/etDetailUnits" android:layout_width="match_parent" android:layout_height="48dp" android:background="#FFFFFF" android:padding="12dp" android:inputType="numberDecimal" android:layout_marginBottom="12dp" />
+
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Rebate Amount (%):" android:textStyle="bold"/>
+        <EditText android:id="@+id/etDetailRebate" android:layout_width="match_parent" android:layout_height="48dp" android:background="#FFFFFF" android:padding="12dp" android:inputType="numberDecimal" android:layout_marginBottom="12dp" />
+
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Total Charges (RM):" android:textStyle="bold"/>
+        <TextView android:id="@+id/tvDetailCharges" android:layout_width="match_parent" android:layout_height="wrap_content" android:textSize="16sp" android:padding="12dp" android:layout_marginBottom="12dp"/>
+
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Final Cost (RM):" android:textStyle="bold" android:textColor="#16A34A"/>
+        <TextView android:id="@+id/tvDetailFinal" android:layout_width="match_parent" android:layout_height="wrap_content" android:textSize="20sp" android:textStyle="bold" android:padding="12dp" android:textColor="#16A34A" android:layout_marginBottom="24dp"/>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btnUpdateRecord"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:text="UPDATE DETAILS 💾"
+            android:backgroundTint="#2563EB"
+            android:textColor="#FFFFFF"
+            android:layout_marginBottom="12dp"/>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btnDeleteRecord"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:text="DELETE RECORD 🗑️"
+            android:backgroundTint="#DC2626"
+            android:textColor="#FFFFFF" />
+
+    </LinearLayout>
+</ScrollView>
