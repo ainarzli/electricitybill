@@ -18,7 +18,7 @@ public class AboutActivity extends AppCompatActivity {
         // Making the GitHub target URL clickable to fulfill rubric requirements
         tvGithubLink.setOnClickListener(v -> {
             Intent intent = new Intent(Intent.ACTION_VIEW);
-            intent.setData(Uri.parse("https://github.com/your-username/your-repository-name")); // Replace with your actual repo link later
+            intent.setData(Uri.parse("https://github.com/ainarzli/electricitybill")); // Replace with your actual repo link later
             startActivity(intent);
         });
     }
